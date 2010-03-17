@@ -1,4 +1,5 @@
 <?php
+#^^^^^^^^
 // application/bootstrap.php
 // 
 // Step 1: APPLICATION CONSTANTS - Set the constants to use in this application.
