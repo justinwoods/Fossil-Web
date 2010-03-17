@@ -7,6 +7,10 @@ define('DEFAULT_FOSSIL_MODEL_SPECIMEN_FORMATION', 'Lance');
 class Fossil_Model_Specimen extends Fossil_Model_Abstract
 {
 
+    const DEFAULT_UTMZONE       = '13 T';
+    const DEFAULT_STRATIGRAPHY  = 'Upper Cretaceous';
+    const DEFAULT_FORMATION     = 'Lance';
+
     protected $_data = array(
         'id' => null,
         'specimen_number' => null,
@@ -31,9 +35,9 @@ class Fossil_Model_Specimen extends Fossil_Model_Abstract
         'thickness' => null,
         'side' => null,
         'position' => null,
-        'utm_zone' => DEFAULT_FOSSIL_MODEL_SPECIMEN_UTMZONE,
-        'stratigraphy' => DEFAULT_FOSSIL_MODEL_SPECIMEN_STRATIGRAPHY,
-        'formation' => DEFAULT_FOSSIL_MODEL_SPECIMEN_FORMATION,
+        'utm_zone' => self::DEFAULT_UTMZONE,
+        'stratigraphy' => self::DEFAULT_STRATIGRAPHY,
+        'formation' => self::DEFAULT_FORMATION,
         'collector_person_id' => null,
         'identifier_person_id' => null,
         'preparator_person_id' => null

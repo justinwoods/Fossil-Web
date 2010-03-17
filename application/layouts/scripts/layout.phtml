@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml"> 
 <head>  
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
-  <title>Zend Framework Quickstart Application</title>
+  <title>Fossil Development</title>
   <?= $this->headLink()->appendStylesheet('/css/global.css') ?>
   <?= $this->dojo()->addStylesheetModule('dijit.themes.tundra') ?>
 </head> 
@@ -20,7 +20,7 @@
     -->
 <div id="header" style="background-color: #EEEEEE; height: 30px;">
     <div id="header-logo" style="float: left">
-        <b>ZF Quickstart Application</b>
+        <strong>Fossil Development</strong>
     </div>
     <div id="header-navigation" style="float: right">
         <!-- To keep urls consistent with the applications router (right now we
@@ -28,10 +28,7 @@
              view helper
              http://framework.zend.com/manual/en/zend.view.helpers.html
              -->
-        <a href="<?= $this->url(
-            array('controller'=>'guestbook'), 
-            'default', 
-            true) ?>">Guestbook</a>
+        <a href="<?= $this->url(array('controller'=>'guestbook'), 'default', true) ?>">Guestbook</a>
     </div>
 </div>
 
