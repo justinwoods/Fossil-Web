@@ -1,6 +1,6 @@
 <?php
 
-class Fossil_Form_Specimen_Element_Preparatorpersonid extends Zend_Form_Element 
+class Fossil_Form_Specimen_Element_Preparatorpersonid extends Zend_Form_Element
 {
 
     public function init() 
