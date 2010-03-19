@@ -1,6 +1,6 @@
 <?php
 
-class Fossil_Form_Specimen_Element_Preparatorpersonid extends Zend_Form_Element
+class Fossil_Form_Specimen_Element_Preparatorpersonid extends Fossil_Form_Element_Select
 {
 
     public function init() 
@@ -12,6 +12,9 @@ class Fossil_Form_Specimen_Element_Preparatorpersonid extends Zend_Form_Element
         
         $this->setLabel('Preparator');
 
+        $this->setMultiOptions(
+            $this->getPairs(new Fossil_Model_Table_VwPeople, 'fullname')
+        );
     }
 
 }
