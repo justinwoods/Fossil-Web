@@ -1,0 +1,31 @@
+<?php echo $this->doctype() ?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <title>Fossil</title>
+</head>
+
+<?
+if($this->dojo()->isEnabled()) {
+    $this->dojo()->setLocalPath('/dojo/dojo/dojo.js')->addStyleSheetModule('dijit.themes.tundra');
+    echo $this->dojo();
+}
+?>
+
+
+<body>
+ <div id="header" style="background-color: #EEEEEE; height: 30px;">
+  
+  <div id="header-logo" style="float: left">
+   <b>ZF Quickstart Application</b>
+  </div>
+  
+  <div id="header-navigation" style="float: right">
+   <a href="<?php echo $this->url(array('controller'=>'guestbook'),'default',true) ?>">Guestbook</a>
+  </div>
+  
+ </div>
+ <?php echo $this->layout()->content ?>
+</body>
+
+</html>

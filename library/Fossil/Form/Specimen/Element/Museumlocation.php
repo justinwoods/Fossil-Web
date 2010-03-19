@@ -1,6 +1,6 @@
 <?php
 
-class Fossil_Form_Specimen_Element_Museumlocation extends Zend_Form_Element 
+class Fossil_Form_Specimen_Element_Museumlocation extends Zend_Dojo_Form_Element_TextBox
 {
 
     public function init() 
@@ -11,7 +11,10 @@ class Fossil_Form_Specimen_Element_Museumlocation extends Zend_Form_Element
              ->addFilter('StripTags');
         
         $this->setLabel('Museum Location');
-
+        
+        $this
+            ->setUppercase(true)
+            ->setTrim(true);
     }
 
 }

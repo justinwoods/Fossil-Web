@@ -1,6 +1,6 @@
 <?php
 
-class Fossil_Form_Specimen_Element_Width extends Zend_Form_Element 
+class Fossil_Form_Specimen_Element_Width extends Zend_Dojo_Form_Element_NumberTextBox
 {
 
     public function init() 
@@ -10,7 +10,8 @@ class Fossil_Form_Specimen_Element_Width extends Zend_Form_Element
              ->addValidator('GreaterThan', false, array(0));
         
         $this->setLabel('Width');
-    
+        
+        $this->setType('decimal');
     }
 
 }
