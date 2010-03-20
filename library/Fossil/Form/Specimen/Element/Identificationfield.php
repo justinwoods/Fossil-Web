@@ -1,6 +1,6 @@
 <?php
 
-class Fossil_Form_Specimen_Element_Identificationfield extends Zend_Form_Element 
+class Fossil_Form_Specimen_Element_Identificationfield extends Zend_Dojo_Form_Element_ComboBox
 {
 
     public function init() 

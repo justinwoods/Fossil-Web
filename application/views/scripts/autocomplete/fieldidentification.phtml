@@ -1,0 +1,8 @@
+<?
+
+$this->layout()->disableLayout();
+
+$results = $this->model->autocomplete($this->query, 'name');
+
+$data = new Zend_Dojo_Data('id', $results, 'name');
+echo $data;

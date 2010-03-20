@@ -1,6 +1,6 @@
 <?php
 
-class Fossil_Model_Table_Hardener extends Zend_Db_Table_Abstract
+class Fossil_Model_Table_Hardener extends Fossil_Model_Table_Abstract
 {
 
     protected $_name = 'hardener';

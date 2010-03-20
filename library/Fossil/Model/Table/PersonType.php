@@ -1,6 +1,6 @@
 <?php
 
-class Fossil_Model_Table_PersonType extends Zend_Db_Table_Abstract
+class Fossil_Model_Table_PersonType extends Fossil_Model_Table_Abstract
 {
 
     protected $_name = 'person_type';
