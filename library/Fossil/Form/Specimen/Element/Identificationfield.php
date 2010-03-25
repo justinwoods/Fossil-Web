@@ -11,6 +11,11 @@ class Fossil_Form_Specimen_Element_Identificationfield extends Zend_Dojo_Form_El
              ->addFilter('StripTags');
         
         $this->setLabel('Field Identification');
+        
+        $this->setStoreId('autocompleter')
+             ->setStoreType('custom.AutocompleteReadStore')
+             ->setStoreParams(
+                 array('url'=>'/autocomplete/fieldidentification', 'requestMethod' => 'get'));
 
     }
 

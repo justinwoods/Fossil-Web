@@ -9,7 +9,7 @@ class Fossil_Model_Table_Abstract extends Zend_Db_Table_Abstract
 
         $select = $this->select()
             ->from($this->info('name'), array($primary_key[1], $fieldname))
-            ->where("{$fieldname} LIKE '%{$string}%'")
+            ->where("{$fieldname} LIKE '{$string}%'")
             ->order($fieldname);
             
         return $this->fetchAll($select);

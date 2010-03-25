@@ -8,6 +8,7 @@ class Fossil_Form_Specimen extends Zend_Form
     
         $this->addPrefixPath('Fossil_Form_Specimen', 'Fossil/Form/Specimen/');
         $this->setElementFilters(array('StringTrim'));
+        $this->setAction('/');
     
         $this->addElement('id', 'id')
              ->addElement('specimennumber','specimen_number')
@@ -38,6 +39,8 @@ class Fossil_Form_Specimen extends Zend_Form
              ->addElement('collectorpersonid','collector_person_id')
              ->addElement('identifierpersonid','identifier_person_id')
              ->addElement('preparatorpersonid','preparator_person_id');
+        
+        $this->addElement('submit', 'submit');
 
     }
 
