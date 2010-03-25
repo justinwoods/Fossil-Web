@@ -13,7 +13,7 @@ if($this->dojo()->isEnabled()) {
 ?>
 
 
-<body>
+<body<?if($this->dojo()->isEnabled()) echo ' class="tundra"';?>>
  <div id="header" style="background-color: #EEEEEE; height: 30px;">
   
   <div id="header-logo" style="float: left">

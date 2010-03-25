@@ -1,6 +1,6 @@
 <?php
 
-class Fossil_Form_Element_Select extends Zend_Form_Element_Select
+class Fossil_Form_Element_Select extends Zend_Dojo_Form_Element_FilteringSelect
 {
 
     public function getPairs($table, $name = 'name', $order = null)

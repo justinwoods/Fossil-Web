@@ -1,6 +1,6 @@
 <?php
 
-class Fossil_Form_Specimen_Element_Taxoncertain extends Zend_Form_Element_Checkbox
+class Fossil_Form_Specimen_Element_Taxoncertain extends Zend_Dojo_Form_Element_CheckBox
 {
 
     public function init() 
